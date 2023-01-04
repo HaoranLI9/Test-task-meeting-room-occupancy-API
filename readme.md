@@ -35,7 +35,7 @@ python3 post_data.py
         you will get
         ```
           {"sensors":["abc"]}
-      ```
+        ```
 
       * you can go to this site or use the following command:
         ```
@@ -44,7 +44,7 @@ python3 post_data.py
         you will get 
         ```
         {"inside":1,"sensor":"abc"}
-      ```
+        ```
 
       * you can go to this site or use the following command:
         ```
@@ -53,7 +53,7 @@ python3 post_data.py
         you will get 
         ```
         {"inside":0}
-      ```
+        ```
   All of the results here are based on my data {"sensor":"abc","ts":"2018-11-14T13:34:49Z","in":3,"out":2}.  
 
 
