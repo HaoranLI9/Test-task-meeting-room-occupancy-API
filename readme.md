@@ -29,32 +29,32 @@ python3 post_data.py
 
 3. See the performance of APIs
       * you can go to this site or use the following command:
-      ```
-      curl --request GET http://127.0.0.1:5000/api/sensors
-      ```
-      you will get
-      ```
-        {"sensors":["abc"]}
-      ```
-
-      * you can go to this site or use the following command:
-      ```
-      curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy
-      ```
-      you will get 
-      ```
-      {"inside":1,"sensor":"abc"}
+        ```
+        curl --request GET http://127.0.0.1:5000/api/sensors
+        ```
+        you will get
+        ```
+          {"sensors":["abc"]}
       ```
 
       * you can go to this site or use the following command:
+        ```
+        curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy
+        ```
+        you will get 
+        ```
+        {"inside":1,"sensor":"abc"}
       ```
-      curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
+
+      * you can go to this site or use the following command:
+        ```
+        curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
+        ```
+        you will get 
+        ```
+        {"inside":0}
       ```
-      you will get 
-      ```
-      {"inside":0}
-      ```
-All of the results here are based on my data {"sensor":"abc","ts":"2018-11-14T13:34:49Z","in":3,"out":2}.  
+  All of the results here are based on my data {"sensor":"abc","ts":"2018-11-14T13:34:49Z","in":3,"out":2}.  
 
 
 ## Test
