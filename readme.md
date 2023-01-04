@@ -70,4 +70,4 @@ You will see 6 tests succeed.
 
 
 ## Maintainers
-@Haoran lI(https://github.com/HaoranLI9)
+[@Haoran LI](https://github.com/HaoranLI9)
