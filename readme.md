@@ -48,7 +48,7 @@ python3 post_data.py
 
       * you can go to this site or use the following command:
         ```
-        curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
+        curl --request GET http://127.0.0.1:5000/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
         ```
         you will get 
         ```

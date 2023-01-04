@@ -35,6 +35,25 @@ def get_sensors():
 def get_sensor_occupancy(sensor_id):
   # get the sensor data for the given sensor id
   if sensor_id in sensor_ids:
+      sum_inside = 0
+      # create a response with the sensor data
+      for w in  webhooks:
+        if w['sensor'] == sensor_id:
+          sum_inside += (w["in_count"] - w["out_count"])
+      response = {
+        "sensor" : sensor_id,
+        "inside" : sum_inside
+      }
+  else:
+    response = {
+        "error": "Sensor not found"
+      }                
+  return jsonify(response)
+
+@app.route('/sensors/<sensor_id>/occupancy', methods=['GET'])
+def get_sensor_occupancy_atInstant(sensor_id):
+  # get the sensor data for the given sensor id
+  if sensor_id in sensor_ids:
     atInstant = request.args.get('atInstant')
     if atInstant:
       sum_inside = 0
@@ -52,7 +71,6 @@ def get_sensor_occupancy(sensor_id):
         if w['sensor'] == sensor_id:
           sum_inside += (w["in_count"] - w["out_count"])
       response = {
-        "sensor" : sensor_id,
         "inside" : sum_inside
       }
   else:
@@ -60,7 +78,6 @@ def get_sensor_occupancy(sensor_id):
         "error": "Sensor not found"
       }                
   return jsonify(response)
-
 @app.route('/api/occupancy', methods=['GET'])
 def get_ccupancy():
     sensor = request.args.get('sensor')

@@ -70,12 +70,12 @@ class TestRoutes(unittest.TestCase):
         self.assertEqual(dic['inside'],18)
 
     def test_6_atInstant(self):
-        response = self.app.get('/api/sensors/abc/occupancy?atInstant=2018-11-14T14:00:00')
+        response = self.app.get('/sensors/abc/occupancy?atInstant=2018-11-14T14:00:00')
         self.assertEqual(response.status_code, 200)
         dic = json.loads(response.data.decode())
         self.assertEqual(dic['inside'],7)
 
-        response = self.app.get('/api/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00')
+        response = self.app.get('/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00')
         self.assertEqual(response.status_code, 200)
         dic = json.loads(response.data.decode())
         self.assertEqual(dic['inside'],0)
