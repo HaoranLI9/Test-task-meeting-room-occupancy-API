@@ -57,6 +57,9 @@ python3 post_data.py
   All of the results here are based on my data {"sensor":"abc","ts":"2018-11-14T13:34:49Z","in":3,"out":2}.  
 
 
+## Interface
+Go to the site http://127.0.0.1:5000//home where I created a simple interface to search.
+
 ## Test
 Use the script
 ```
