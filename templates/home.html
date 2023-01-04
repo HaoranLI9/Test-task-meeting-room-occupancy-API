@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <h1>List of sensors</h1>
+  <div id="data-container"></div>
+  <script>
+    fetch('/api/sensors')
+      .then(response => response.json())
+      .then(data => {
+        var container = document.getElementById('data-container');
+        container.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+      });
+  </script>
+  <body>
+    <h1>You can search the occupancy by the name of sensor</h1>
+    <form action="/api/occupancy" method="get">
+      <input type="text" name="sensor" placeholder="sensor">
+      <button type="submit">Search</button>
+      </form>
+    </form>
+  </body>
+</html>
