@@ -20,7 +20,7 @@ you can use cmd like the following by
 curl --header "Content-Type: application/json" \
 --request POST --data \
 '{"sensor":"abc","ts":"2018-11-14T13:34:49Z","in":3,"out":2}' \
-http://127.0.0.1:5000/api/webhook
+http://127.0.0.1:5001/api/webhook
 ```
 Or you can use the script (you need to change the data to what you want):
 ```
@@ -30,7 +30,7 @@ python3 post_data.py
 3. See the performance of APIs
       * you can go to this site or use the following command:
         ```
-        curl --request GET http://127.0.0.1:5000/api/sensors
+        curl --request GET http://127.0.0.1:5001/api/sensors
         ```
         you will get
         ```
@@ -39,7 +39,7 @@ python3 post_data.py
 
       * you can go to this site or use the following command:
         ```
-        curl --request GET http://127.0.0.1:5000/api/sensors/abc/occupancy
+        curl --request GET http://127.0.0.1:5001/api/sensors/abc/occupancy
         ```
         you will get 
         ```
@@ -48,7 +48,7 @@ python3 post_data.py
 
       * you can go to this site or use the following command:
         ```
-        curl --request GET http://127.0.0.1:5000/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
+        curl --request GET http://127.0.0.1:5001/sensors/abc/occupancy?atInstant=2018-11-14T12:00:00Z  
         ```
         you will get 
         ```
@@ -58,7 +58,7 @@ python3 post_data.py
 
 
 ## Interface
-Go to the site http://127.0.0.1:5000/home where I created a simple interface to search.
+Go to the site http://127.0.0.1:5001/home where I created a simple interface to search.
 
 ## Test
 Use the script
