@@ -9,7 +9,7 @@ This project is about an exercice for Square sense, it comes from https://jobs.s
 - `test.py` : This script contains all of the unit tests
 
 ## Usage
-Hostname defined is 127.0.0.1:5000, and the environement is Linux.
+Hostname defined is 127.0.0.1:5001, and the environement is Linux.
 1. start the server and APIs
 ```
 python3 server.py
