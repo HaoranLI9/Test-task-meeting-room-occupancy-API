@@ -58,7 +58,7 @@ python3 post_data.py
 
 
 ## Interface
-Go to the site http://127.0.0.1:5000//home where I created a simple interface to search.
+Go to the site http://127.0.0.1:5000/home where I created a simple interface to search.
 
 ## Test
 Use the script
