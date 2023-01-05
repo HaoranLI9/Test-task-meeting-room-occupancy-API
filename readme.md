@@ -1,5 +1,5 @@
 # Test task: meeting room occupancy API
-This project is about an exercice for Square sense, it comes from https://jobs.square-sense.com/exercise/*****.pdf (not sure it' secret)
+This project is about an exercice for Square sense, it comes from https://jobs.square-sense.com/exercise/*****.pdf (not sure it' confidential or nots)
 
 ## Folder Structure
 
